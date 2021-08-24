@@ -1,0 +1,33 @@
+<article>
+  <a href="/dashboard"> &larr; Back to dashboard</a>
+  <h2>
+    Edit Post
+  </h2>
+  <form class="edit-restaurant-form">
+    <div>
+      <input name="restaurant-title" type="text" value="{{restaurant.title}}" />
+      <span>({{format_url restaurant.restaurant_url}})</span>
+    </div>
+    <div>
+      <a href="/restaurant/{{restaurant.id}}">{{restaurant.comments.length}} {{format_plural "comment" restaurant.comments.length}}</a>
+    </div>
+    <button type="submit">Save post</button>
+    <button type="button" class="delete-restaurant-btn">Delete post</button>
+  </form>
+</article>
+
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+  </div>
+</form>
+
+{{> comments restaurant.comments}}
+
+<script src="/javascript/edit-restaurant.js"></script>
+<script src="/javascript/delete-restaurant.js"></script>
+<script src="/javascript/comment.js"></script>
