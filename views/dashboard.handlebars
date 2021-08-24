@@ -1,0 +1,31 @@
+<section>
+  <h2>Add New Restaurant</h2>
+
+  <form class="new-restaurant-form">
+    <div>
+      <label for="restaurant-title">Title</label>
+      <input type="text" id="restaurant-title" name="restaurant-title" />
+    </div>
+    <div>
+      <label for="restaurant-url">Link</label>
+      <input id="restaurant-url" name="restaurant-url" />
+    </div>
+    <button type="submit" class="btn">Create</button>
+  </form>
+</section>
+
+{{#if restaurants.length}}
+<section>
+  <h2>Your Posts</h2>
+  <ol>
+    {{#each restaurant as |restaurant|}}
+    <li>
+      {{> restaurant-info restaurant}}
+      <a href="/dashboard/edit/{{restaurant.id}}" class="edit-link">Edit post</a>
+    </li>
+    {{/each}}
+  </ol>
+</section>
+{{/if}}
+
+<script src="/javascript/add-restaurant.js"></script>
