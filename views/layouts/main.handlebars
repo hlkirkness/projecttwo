@@ -11,15 +11,16 @@
 <body>
   <div class="wrapper">
     <header>
+      <img class="restaurant-image" src="https://cache.marriott.com/marriottassets/marriott/DXBTP/dxbtp-liv-restaurant-6592-hor-feat.jpg"/>
       <h1>
         <a href="/">Restaurant Reviews</a>
       </h1>
       <nav>
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
+        <a href="/views/dashboard.handlebars">dashboard</a>
         <button id="logout" class="btn-no-style">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/views/login.handlebars">login</a>
         {{/if}}
       </nav>
     </header>
@@ -27,12 +28,12 @@
       {{{ body }}}
     </main>
     <footer>
-      Thanks for visiting!
+      Find Your New Favorite Restaurant Today!
     </footer>
   </div>
   
   {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
+  <script src="/public/javascript/logout.js"></script>
   {{/if}}
 </body>
 

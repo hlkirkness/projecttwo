@@ -3,26 +3,27 @@
   }
   
   body, html {
+    background-color: #ede3e4;
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #333;
   }
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: #3d5b59;
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: #b5e5cf;
   }
   
   button {
-    background-color: #225ca3;
+    background-color: #3d5b59;
     border: 0;
     padding: 1%;
     color: white;
@@ -33,10 +34,10 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: #b5e5cf;
   }
   
-  .post-list {
+  .restaurant-list {
     margin: 0;
     padding: 0;
   }
@@ -49,7 +50,7 @@
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid #3d5b59;
   }
   
   textarea {
@@ -75,6 +76,7 @@
   }
   
   header {
+    background-color: #b99095;
     border-bottom: 1px solid #ccc;
     display: flex;
     justify-content: space-between;
@@ -109,20 +111,20 @@
     color: #3486eb;
   }
   
-  .delete-post-btn {
+  .delete-restaurant-btn {
     background-color: #d41414;
   }
   
-  .delete-post-btn:hover {
+  .delete-restaurant-btn:hover {
     background-color: #ff643d;
   }
   
-  .post {
+  .restaurant {
     margin-bottom: 2%;
     line-height: 150%;
   }
   
-  .post .title span {
+  .restaurant .title span {
     font-style: italic;
     font-size: 90%;
     color: #7d7d7d;
@@ -131,15 +133,6 @@
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
   }
   
   .comment-form {
@@ -161,15 +154,16 @@
     opacity: .6;
   }
   
-  .new-post-form input {
+  .new-restaurant-form input {
     width: 300px;
   }
   
-  .edit-post-form {
+  .edit-restaurant-form {
     margin-bottom: 5%;
   }
   
   footer {
+    background-color: #b99095;
     border-top: 1px solid #ccc;
     display: flex;
     justify-content: center;
