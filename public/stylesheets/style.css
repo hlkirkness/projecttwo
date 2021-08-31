@@ -85,7 +85,7 @@
   }
   
   header h1 {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   
   main {
@@ -160,6 +160,15 @@
   
   .edit-restaurant-form {
     margin-bottom: 5%;
+  }
+
+  .restaurant-image {
+      display: flex;
+      width: 100%;
+  }
+
+  .login-signup {
+      color: #3d5b59;
   }
   
   footer {
